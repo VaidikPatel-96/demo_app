@@ -197,7 +197,7 @@ class Server_side(Document):
 # 10 ////////////////db.exists(doctype,name)/////////////////////////////////
 
 	# def validate(self):
-	# 	if frappe.db.exists('Client Side Scripting','PE-00311'):
+	# 	if frappe.db.exists('Client Side Scripting','PE-0021'):
 	# 		frappe.msgprint("the Document is Exists in Database")
 	# 	else:
 	# 		frappe.msgprint("THe document does not Exists in Database")
@@ -220,25 +220,25 @@ class Server_side(Document):
 	# 	data=frappe.db.sql("""
 	# 				 		  SELECT
 	# 				 				firstname,
-	# 				 				age
+	# 				 				lastname
 	# 				 			FROM
 	# 				 				`tabClient Side Scripting`
 	# 				 			WHERE
 	# 				 				enable = 1
 	# 				 	""", as_dict=1)
 	# 	for d in data:
-	# 		frappe.msgprint(_("The perent Firatname is {0} and last name is {1}").format(d.firstname,d.age))	
+	# 		frappe.msgprint(_("The perent Firatname is {0} and last name is {1}").format(d.firstname,d.lastname))	
     
 
 
 # 13  ///////// Server side call ///////////////////////////////////////
 
-	# @frappe.whitelist()
-	# def frm_call(self,msg):
-	# 	import time
-	# 	time.sleep(5)
-	# 	# frappe.msgprint(msg)
+	@frappe.whitelist()
+	def frm_call(self,msg):
+		import time
+		time.sleep(5)
+		# frappe.msgprint(msg)
 
-	# 	self.mob_no=9924052046
+		self.mob_no=9924052046
 
-		# return "Hi this message from frm_call"
+		return "Hi this message from frm_call"
