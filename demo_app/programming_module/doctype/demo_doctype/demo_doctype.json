@@ -1,0 +1,223 @@
+{
+ "actions": [
+  {
+   "action": "bb",
+   "action_type": "Server Action",
+   "label": "aa"
+  }
+ ],
+ "allow_rename": 1,
+ "creation": "2025-01-17 20:50:57.816507",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fname",
+  "attach",
+  "attach_image",
+  "barcode",
+  "button",
+  "check",
+  "color",
+  "currency",
+  "data",
+  "date",
+  "datetime",
+  "float",
+  "int",
+  "link",
+  "select",
+  "text",
+  "autocomplete",
+  "duration",
+  "mape",
+  "icon",
+  "image",
+  "json",
+  "percent",
+  "number",
+  "majama",
+  "rating",
+  "signature",
+  "tiem",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "fname",
+   "fieldtype": "Data",
+   "label": "Fname"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "attach"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image",
+   "label": "attach image"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "barcode"
+  },
+  {
+   "fieldname": "button",
+   "fieldtype": "Button",
+   "label": "Button"
+  },
+  {
+   "default": "0",
+   "fieldname": "check",
+   "fieldtype": "Check",
+   "label": "check"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Currency",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Data",
+   "label": "Data"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "label": "Datetime"
+  },
+  {
+   "fieldname": "float",
+   "fieldtype": "Float",
+   "label": "Float"
+  },
+  {
+   "fieldname": "int",
+   "fieldtype": "Int",
+   "label": "Int"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Link",
+   "label": "Link",
+   "options": "ToDo"
+  },
+  {
+   "fieldname": "select",
+   "fieldtype": "Select",
+   "label": "Select",
+   "options": "A\nB\nC"
+  },
+  {
+   "fieldname": "text",
+   "fieldtype": "Text",
+   "label": "Text"
+  },
+  {
+   "fieldname": "autocomplete",
+   "fieldtype": "Autocomplete",
+   "label": "Autocomplete"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "mape",
+   "fieldtype": "Geolocation",
+   "label": "mape"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Icon",
+   "label": "Icon"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "json",
+   "fieldtype": "JSON",
+   "label": "Json"
+  },
+  {
+   "fieldname": "percent",
+   "fieldtype": "Percent",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Phone",
+   "label": "Mobile number"
+  },
+  {
+   "fieldname": "majama",
+   "fieldtype": "Read Only",
+   "label": "MAJAMA"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "hello rating"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "HR"
+  },
+  {
+   "fieldname": "tiem",
+   "fieldtype": "Time",
+   "label": "to date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Demo Doctype",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-27 18:00:22.117063",
+ "modified_by": "Administrator",
+ "module": "Programming Module",
+ "name": "Demo Doctype",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

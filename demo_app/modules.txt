@@ -1,1 +1,3 @@
-Demo App
+Programming Module
+Library Management
+Practice Module

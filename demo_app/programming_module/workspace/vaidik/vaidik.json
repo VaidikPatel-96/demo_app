@@ -1,0 +1,48 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"0nYUYQPfnr\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">vaidik</span>\",\"col\":12}}]",
+ "creation": "2025-02-02 16:49:34.381908",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "heart-active",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "vaidik",
+ "links": [],
+ "modified": "2025-02-02 17:12:09.469705",
+ "modified_by": "Administrator",
+ "module": "Programming Module",
+ "name": "vaidik",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Build",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Account",
+   "link_to": "Account",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Account Closing Balance",
+   "link_to": "Account Closing Balance",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "Calendar",
+   "label": "Single demo",
+   "link_to": "Single demo",
+   "type": "DocType"
+  }
+ ],
+ "title": "vaidik"
+}

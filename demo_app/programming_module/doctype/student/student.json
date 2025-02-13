@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "std-.####",
+ "creation": "2025-01-18 17:39:07.623251",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_ditails_section",
+  "id",
+  "studentname",
+  "bod",
+  "gender",
+  "grade",
+  "enrollmentdate",
+  "columnbreak",
+  "status",
+  "notes",
+  "percentage",
+  "section_break_lqj6",
+  "subjects"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "studentname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "student name",
+   "reqd": 1
+  },
+  {
+   "description": "birth of date",
+   "fieldname": "bod",
+   "fieldtype": "Date",
+   "label": "BOD"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "male\nfemale"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "label": "Grade",
+   "options": "A\nB\nC\nD\nF",
+   "read_only": 1
+  },
+  {
+   "fieldname": "enrollmentdate",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Enrollment Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pass\nFail",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "description": "Auto update",
+   "fieldname": "percentage",
+   "fieldtype": "Percent",
+   "label": "Percentage",
+   "read_only": 1
+  },
+  {
+   "description": "add to Subjects All",
+   "fieldname": "subjects",
+   "fieldtype": "Table",
+   "label": "Subjects",
+   "options": "Subject Details"
+  },
+  {
+   "fieldname": "columnbreak",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lqj6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "student_ditails_section",
+   "fieldtype": "Section Break",
+   "label": "Student Ditails"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-02-10 12:35:03.940956",
+ "modified_by": "Administrator",
+ "module": "Programming Module",
+ "name": "Student",
+ "naming_rule": "Expression (old style)",
+ "nsm_parent_field": "parent_student",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

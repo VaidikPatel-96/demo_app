@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-18 14:11:02.020102",
+ "description": "fhetyjtyjtyj",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "abc",
+  "edf",
+  "xyz",
+  "img"
+ ],
+ "fields": [
+  {
+   "fieldname": "abc",
+   "fieldtype": "Data",
+   "label": "ABC"
+  },
+  {
+   "fieldname": "edf",
+   "fieldtype": "Data",
+   "label": "EDF"
+  },
+  {
+   "fieldname": "xyz",
+   "fieldtype": "Data",
+   "label": "XYZ"
+  },
+  {
+   "fieldname": "img",
+   "fieldtype": "Attach Image",
+   "label": "img"
+  }
+ ],
+ "image_field": "img",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-29 14:20:44.332075",
+ "modified_by": "Administrator",
+ "module": "Programming Module",
+ "name": "Naming Series Doc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "abc",
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "img"
+}

@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-28 18:18:03.119201",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "d",
+  "ddd"
+ ],
+ "fields": [
+  {
+   "fieldname": "d",
+   "fieldtype": "Data",
+   "label": "d"
+  },
+  {
+   "fieldname": "ddd",
+   "fieldtype": "Datetime",
+   "label": "ddd"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "links": [],
+ "modified": "2025-01-28 18:27:27.289422",
+ "modified_by": "Administrator",
+ "module": "Programming Module",
+ "name": "ccc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

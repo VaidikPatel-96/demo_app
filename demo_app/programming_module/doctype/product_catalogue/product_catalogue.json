@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:prodect_name",
+ "creation": "2025-01-22 17:22:19.313416",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "product_ditails_section",
+  "prodect_id",
+  "prodect_name",
+  "columnbreak",
+  "category",
+  "price",
+  "stock_availabilty",
+  "tags",
+  "tab",
+  "tab_section",
+  "imagess",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "prodect_id",
+   "fieldtype": "Barcode",
+   "in_list_view": 1,
+   "label": "Product ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prodect_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Product Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stock_availabilty",
+   "fieldtype": "Int",
+   "label": "Stock Availabilty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Data",
+   "label": "Tags"
+  },
+  {
+   "fieldname": "imagess",
+   "fieldtype": "Table",
+   "label": "Images",
+   "options": "Product Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "columnbreak",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tab_section",
+   "fieldtype": "Section Break",
+   "label": "Tab"
+  },
+  {
+   "fieldname": "tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab"
+  },
+  {
+   "fieldname": "product_ditails_section",
+   "fieldtype": "Section Break",
+   "label": "Product Ditails"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-29 15:40:48.755349",
+ "modified_by": "Administrator",
+ "module": "Programming Module",
+ "name": "product Catalogue",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
