@@ -11,11 +11,11 @@ class Server_side(Document):
 # class Server_side(Document):
 
  # 1  #####  server side events ######   
-	# def validate(self):
-	# 	frappe.msgprint("hello validate")
+	def validate(self):
+		frappe.msgprint("hello validate")
     
 	# def before_save(self):
-	# 	frappe.throw("hello 'before_save'event")
+	# 	frappe.msgprint("hello 'before_save'event")
 
 
 	# def before_insert(self):
@@ -23,6 +23,8 @@ class Server_side(Document):
 
 	# def after_insert(self):
 	#  	frappe.msgprint("hello 'after_insert'event")
+		 
+		 
 	# def on_update(self):
 	#  	frappe.msgprint("hello 'on_update'event")
 
@@ -70,11 +72,11 @@ class Server_side(Document):
 		# frappe.get_doc(doctype, name)
 
 		# def validate(self):
-		# 	self.get_document
+		# 	self.get_document()
 
 		# def get_document(self):
-		# 	doc = frappe.get_doc('Client Side Scripting', self.cllent_side_doc)
-		# 	frappe.msgprint(_("The First name is {0} and age is {1}").format(doc.firstname,doc.age))
+		# 	doc = frappe.get_doc('Client Side Scripting', self.client_side_doc)
+		# 	frappe.msgprint("The First name is {0} and age is {1}").format(doc.firstname,doc.age)
 
 
 #  4   //// frappe.new_doc (doctype)////
@@ -105,19 +107,19 @@ class Server_side(Document):
 # ///////Document Methods ////////////
 
 
-	def validate(self):
-		self.new_document()
+	# def validate(self):
+	# 	self.new_document()
 
-	def new_document(self):
-		doc = frappe.new_doc('Client Side Scripting')
-		doc.firstname='bally'
-		doc.age=25
-		# doc.insert()
-		doc.append("family_members",{  	"name1":"vivek",
-							   			"relation":"bro",
-										"age":24
-						 			})
-		doc.insert()
+	# def new_document(self):
+	# 	doc = frappe.new_doc('Client Side Scripting')
+	# 	doc.firstname='bally'
+	# 	doc.age=25
+	# 	# doc.insert()
+	# 	doc.append("family_members",{  	"name1":"vivek",
+	# 						   			"relation":"bro",
+	# 									"age":24
+	# 					 			})
+	# 	doc.insert()
     
 	
 	
@@ -233,12 +235,20 @@ class Server_side(Document):
 
 # 13  ///////// Server side call ///////////////////////////////////////
 
-	@frappe.whitelist()
-	def frm_call(self,msg):
-		import time
-		time.sleep(5)
-		# frappe.msgprint(msg)
+	# @frappe.whitelist()
+	# def frm_call(self,msg):
+	# 	import time
+	# 	time.sleep(5)
+	# 	# frappe.msgprint(msg)
 
-		self.mob_no=9924052046
+	# 	self.mob_no=9924052046
 
-		return "Hi this message from frm_call"
+	# 	return "Hi this message from frm_call"
+
+
+
+# last_doc = frappe.get_last_doc("Server_side")
+
+# Print details of the last document
+# print(f"Last Document Title: {last_doc.title}")
+# print(f"Description: {last_doc.description}")

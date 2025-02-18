@@ -1,21 +1,19 @@
 import frappe
-from frappe.utils import today
+import string
+import random
 
-def check_overdue_books():
-    overdue_books = frappe.get_all(
-        "Library Transaction",
-        filters={ "date": ("<", today())},
-        fields=["name", "library_member", "date"],
-    )
+def all():
+    pass 
 
-    for transaction in overdue_books:
-        frappe.sendmail(
-            recipients=frappe.get_value(
-                "Library Member",
-                transaction.library_member,
-                "email",
-            ),
-            subject="Overdue Book",
-            message=f"Book {transaction.name} was due on {transaction.date}.",
+def cron():
 
-        )
+    print("\n\nInserting a new note\n\n")
+    letters = string.ascii_letters
+    note = ''.join(random.choice(letters) for i in range(20))
+
+    new_note = frappe.get_doc({"doctype": "Note", 
+        "title": note  
+    })    
+
+    new_note.insert()
+    frappe.db.commit()

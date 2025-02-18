@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "TEST-.#####",
  "creation": "2025-01-28 11:59:51.824618",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -27,8 +28,7 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full Name",
-   "read_only": 1
+   "label": "Full Name"
   },
   {
    "fieldname": "email_address",
@@ -37,6 +37,7 @@
    "options": "Emali"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "phone",
    "fieldtype": "Data",
    "label": "Phone",
@@ -45,10 +46,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-28 12:03:45.680764",
+ "modified": "2025-02-14 16:53:51.468869",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
