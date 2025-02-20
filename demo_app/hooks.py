@@ -154,6 +154,24 @@ app_license = "mit"
 #     ]
 # }
 
+# scheduler_events = {
+#     "daily": [
+#         "your_app.library_management.scheduled_tasks.mark_expired_memberships"
+#     ],
+#     "hourly": [
+#         "your_app.library_management.scheduled_tasks.notify_due_books"
+#     ],
+#     "weekly": [
+#         "your_app.library_management.scheduled_tasks.auto_return_overdue_books"
+#     ],
+#     "cron": {
+#         "0 0 1 * *": [  # Runs at midnight on the 1st of every month
+#             "your_app.library_management.scheduled_tasks.generate_monthly_report"
+#         ]
+#     }
+# }
+
+
 scheduler_events = {
 
     "cron": {
@@ -253,4 +271,17 @@ scheduler_events = {
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+# doc_events = {
+#     "Student": {
+#         "validate": "demo_app.events.validate_student"
+#     }
+# }
+
+
+doc_events = {
+    "Customer1": {
+        "before_insert": "demo_app.customer1.events.before_insert"
+    }
+}
 

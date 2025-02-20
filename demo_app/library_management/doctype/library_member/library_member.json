@@ -9,7 +9,7 @@
   "first_name",
   "last_name",
   "full_name",
-  "email_address",
+  "email",
   "phone"
  ],
  "fields": [
@@ -17,8 +17,7 @@
    "fieldname": "first_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "First Name",
-   "reqd": 1
+   "label": "First Name"
   },
   {
    "fieldname": "last_name",
@@ -31,22 +30,22 @@
    "label": "Full Name"
   },
   {
-   "fieldname": "email_address",
-   "fieldtype": "Data",
-   "label": "Email Address",
-   "options": "Emali"
-  },
-  {
    "allow_in_quick_entry": 1,
    "fieldname": "phone",
    "fieldtype": "Data",
    "label": "Phone",
    "options": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Emali"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-14 16:53:51.468869",
+ "modified": "2025-02-19 11:45:11.638745",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",

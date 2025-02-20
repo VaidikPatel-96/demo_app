@@ -6,3 +6,11 @@
 
 // 	},
 // });
+frappe.ui.form.on('Library Membership', {
+    validate: function(frm) {
+        if (!frm.doc.from_date || !frm.doc.to_date) {
+            frappe.msgprint(__('Please enter a valid From Date and To Date.'));
+            frappe.validated = false;
+        }
+    }
+});

@@ -18,7 +18,8 @@
   "notes",
   "percentage",
   "section_break_lqj6",
-  "subjects"
+  "subjects",
+  "amended_from"
  ],
  "fields": [
   {
@@ -47,9 +48,9 @@
   },
   {
    "fieldname": "gender",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Gender",
-   "options": "male\nfemale"
+   "options": "Gender"
   },
   {
    "fieldname": "grade",
@@ -59,6 +60,7 @@
    "read_only": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "enrollmentdate",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -68,7 +70,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Pass\nFail",
+   "options": "Pass\nFailed\nExcellent",
    "read_only": 1
   },
   {
@@ -102,12 +104,22 @@
    "fieldname": "student_ditails_section",
    "fieldtype": "Section Break",
    "label": "Student Ditails"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-10 12:35:03.940956",
+ "modified": "2025-02-20 11:31:18.462487",
  "modified_by": "Administrator",
  "module": "Programming Module",
  "name": "Student",
