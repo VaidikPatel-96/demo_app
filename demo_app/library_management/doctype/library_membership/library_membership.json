@@ -11,7 +11,8 @@
   "from_date",
   "to_date",
   "paid",
-  "amended_from"
+  "amended_from",
+  "status"
  ],
  "fields": [
   {
@@ -54,12 +55,18 @@
    "fieldname": "from_date",
    "fieldtype": "Date",
    "label": "From Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Expired\nActive"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-18 17:03:36.159606",
+ "modified": "2025-02-22 16:06:11.983410",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Membership",

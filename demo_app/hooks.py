@@ -48,6 +48,8 @@ app_license = "mit"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
+doctype_js = {"Customer" : "public/js/customer.js"}
+
 # Svg Icons
 # ------------------
 # include app icons in desk
@@ -172,29 +174,29 @@ app_license = "mit"
 # }
 
 
-scheduler_events = {
+# scheduler_events = {
 
-    "cron": {
-        "* * * * *": [
-            "demo_app.tasks.cron"
-        ]
-    },
-	"all": [
-		"demo_app.tasks.all"
-	],
-	"daily": [
-		"demo_app.tasks.daily"
-	],
-	"hourly": [
-		"demo_app.tasks.hourly"
-	],
-	"weekly": [
-		"demo_app.tasks.weekly"
-	],
-	"monthly": [
-		"demo_app.tasks.monthly"
-	],
-}
+#     "cron": {
+#         "* * * * *": [
+#             "demo_app.tasks.cron"
+#         ]
+#     },
+# 	"all": [
+# 		"demo_app.tasks.all"
+# 	],
+# 	"daily": [
+# 		"demo_app.tasks.daily"
+# 	],
+# 	"hourly": [
+# 		"demo_app.tasks.hourly"
+# 	],
+# 	"weekly": [
+# 		"demo_app.tasks.weekly"
+# 	],
+# 	"monthly": [
+# 		"demo_app.tasks.monthly"
+# 	],
+# }
 
 # Testing
 # -------
@@ -272,16 +274,48 @@ scheduler_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+scheduler_events = {
+    "daily": [
+        "demo_app.library_management.scheduled_tasks.mark_expired_memberships"
+    ],
+    "hourly": [
+        "demo_app.library_management.scheduled_tasks.auto_return_overdue_books"
+    ],
+    "monthly": [
+        "demo_app.library_management.scheduled_tasks.generate_monthly_report"
+    ]
+}
+
+
+scheduler_events = {
+    "daily": [
+        "demo_app.scheduled_tasks.mark_expired_memberships"
+    ]
+}
+
 # doc_events = {
 #     "Student": {
-#         "validate": "demo_app.events.validate_student"
+#         "validate": "demo_app.programming_module.events.validate_student"
 #     }
 # }
 
 
-doc_events = {
-    "Customer1": {
-        "before_insert": "demo_app.customer1.events.before_insert"
-    }
-}
+# doc_events = {
+#     "Customer1": {
+#         "before_insert": "demo_app.customer1.events.before_insert"
+#     }
+# }
 
+# override_whitelisted_methods = {
+#    "frappe.client.insert": "demo_app.customer.custom_insert"
+# }
+
+# doc_events = {
+#     "Customer": {
+#         "before_save": "demo_app.custom.customer.update_customer_group_count"
+#     }
+# }
+
+fixtures = [
+    "Library Member"
+]

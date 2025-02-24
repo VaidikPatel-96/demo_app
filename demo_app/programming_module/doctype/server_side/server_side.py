@@ -10,9 +10,9 @@ class Server_side(Document):
 	# pass
 # class Server_side(Document):
 
- # 1  #####  server side events ######   
-	def validate(self):
-		frappe.msgprint("hello validate")
+#  # 1  #####  server side events ######   
+# 	def validate(self):
+# 		frappe.msgprint("hello validate")
     
 	# def before_save(self):
 	# 	frappe.msgprint("hello 'before_save'event")
@@ -252,3 +252,6 @@ class Server_side(Document):
 # Print details of the last document
 # print(f"Last Document Title: {last_doc.title}")
 # print(f"Description: {last_doc.description}")
+
+
+

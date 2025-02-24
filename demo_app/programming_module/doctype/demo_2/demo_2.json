@@ -29,13 +29,12 @@
    "depends_on": "\r\n",
    "fieldname": "lname",
    "fieldtype": "Data",
-   "label": "Lname",
-   "mandatory_depends_on": "fname"
+   "label": "Lname"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-29 16:41:34.921150",
+ "modified": "2025-02-21 17:21:44.491360",
  "modified_by": "Administrator",
  "module": "Programming Module",
  "name": "demo_2",

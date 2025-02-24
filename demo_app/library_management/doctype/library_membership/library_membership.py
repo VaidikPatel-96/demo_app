@@ -42,3 +42,20 @@ class LibraryMembership(Document):
         )
         if existing_membership:
             frappe.throw("Member already has an active membership!")
+# import frappe
+# from frappe.model.document import Document
+
+# class LibraryMembership(Document):  # Example: Fetch Student data inside LibraryMembership
+#     def show_student_data(self, student_id='std-0016'):
+#         student = frappe.db.get_list(
+#             'Student',
+#             filters={'name': student_id},  # Get specific student
+#             fields=['studentname', 'enrollmentdate', 'status']
+#         )
+
+#         if student:
+#             student_data = student[0]
+#             msg = f"Student Name: {student_data['studentname']} \nEnrollment Date: {student_data['enrollmentdate']} \nStatus: {student_data['status']}"
+#             frappe.msgprint(msg)
+#         else:
+#             frappe.msgprint(f"Student {student_id} not found.")

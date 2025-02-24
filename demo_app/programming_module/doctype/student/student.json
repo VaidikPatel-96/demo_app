@@ -90,7 +90,7 @@
    "fieldname": "subjects",
    "fieldtype": "Table",
    "label": "Subjects",
-   "options": "Subject Details"
+   "options": "Subjects"
   },
   {
    "fieldname": "columnbreak",
@@ -119,7 +119,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-20 11:31:18.462487",
+ "modified": "2025-02-21 14:52:21.488391",
  "modified_by": "Administrator",
  "module": "Programming Module",
  "name": "Student",

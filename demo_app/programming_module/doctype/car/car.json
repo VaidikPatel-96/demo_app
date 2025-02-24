@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "is_standard",
   "id",
   "car_name",
   "amended_from"
@@ -28,15 +29,21 @@
   },
   {
    "fieldname": "car_name",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "car naem",
    "options": "car name"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_standard",
+   "fieldtype": "Check",
+   "label": "Is standard"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-12 15:23:22.558355",
+ "modified": "2025-02-21 15:36:22.323629",
  "modified_by": "Administrator",
  "module": "Programming Module",
  "name": "car",
