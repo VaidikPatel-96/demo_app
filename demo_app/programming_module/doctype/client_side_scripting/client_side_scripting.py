@@ -1,49 +1,64 @@
 # Copyright (c) 2025, D-codE and contributors
 # For license information, please see license.txt
 
-# import frappe
+import frappe
 from frappe.model.document import Document
 from frappe import _ 
 
 class ClientSideScripting(Document):
-	def get_student_data(self):
-		pass
-# 		data = frappe.get_all('Student',
-# 			filters={'name': 'std-0016'},
-# 				fields=['enrollmentdate', 'studentname', 'id', 'bod']
-# 			)
-# 		frappe.msgprint("The student name is {0} and enrollment date is {1}".format(data[0].studentname,data[0].enrollmentdate))
-# 		return data
+	def validate(self):
+		frappe.msgprint(
+			self.student)
+		linked_student = frappe.get_doc("Student", self.student)
+		print("8888888888",linked_student)
+		frappe.msgprint(
+			linked_student.studentname)
+		print("8888888888",linked_student.studentname)
+		frappe.msgprint(
+			"The student name is {0} and enrollment date is {1}".format(linked_student.studentname, linked_student.enrollmentdate)
+		)
+		print("8888888888",linked_student.enrollmentdate)
+		frappe.msgprint(
+			linked_student.grade)
+		print("8888888888",linked_student.grade)
+
+		frappe.msgprint(
+			linked_student.status)
+		print("8888888888",linked_student.status)
+
+		for return_subject in linked_student.subjects:
+			frappe.msgprint(return_subject.subjectname)
+			print("8888888888",linked_student.subjects)
+
+		
+		# for role in self.get("subjects"):
+		# 	frappe.msgprint(
+		# 		role.subjectname)
+		# print("7777777777",self.get("subjects"))
+		# for linked_student in get("student"):
+		# 	frappe.msgprint(
+		# 		linked_student.subjectname)
+			
 	
-# import frappe
-# from frappe.model.document import Document
+	
 
-# class ClientSideScripting(Document):
-#     def get_student_data(self):
-#         data = frappe.get_all(
-#             'Student',
-#             filters={'name': 'std-0016'},  # Fetch specific student
-#             fields=['enrollment_date', 'student_name', 'id', 'bod']  # Ensure these fields exist
-#         )
+		
+	
+		
 
-#         if data:
-#             student = data[0]  # Get first (and only) record
-#             frappe.msgprint("The student name is {0} and enrollment date is {1}".format(
-#                 student.get('student_name', 'N/A'),  # Use .get() to avoid KeyError
-#                 student.get('enrollment_date', 'N/A')
-#             ))
-#         else:
-#             frappe.msgprint("Student not found.")
+		# pass
+	# 	data = frappe.get_list('Student',
+	# 		filters={'name': 'std-0016'},
+	# 			fields=['enrollmentdate', 'studentname', 'id', 'bod']
+	# 		)
+	# 	print("______________",data)
+	# 	frappe.msgprint("The student name is {0} and enrollment date is {1}".format(data[0].studentname,data[0].enrollmentdate))
+	# 	return data
+	
+	# def validate(self):
 
-#         return data
+	
 
-
-# 		data = frappe.get_all('Student',
-# 			filters={'name': 'std-0016'},
-# 				fields=['enrollmentdate', 'studentname', 'id', 'bob']
-# 			)
-# 		frappe.msgprint()
-# 		return data
 
 # @frappe.whitelist()
 # def frappe_call(msg):
@@ -51,7 +66,17 @@ class ClientSideScripting(Document):
 # 	time.sleep(5)
 	# frappe.msgprint(msg)
 
-
+# class ClientSideScripting(Document):
+# 	def validate(self):
+# 		# pass
+# 		data = frappe.get_list('Student',
+# 			filters={'name': 'std-0016'},
+# 				fields=['enrollmentdate', 'studentname', 'id', 'bod']
+# 			)
+# 		print("______________",data)
+# 		frappe.msgprint("The student name is {0} and enrollment date is {1}".format(data[0].studentname,data[0].enrollmentdate))
+# 		return data
+	
 
 
     

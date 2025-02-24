@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "enable",
+  "student",
   "firstname",
   "middlename",
   "lastname",
@@ -93,12 +94,18 @@
    "fieldtype": "Table",
    "label": "Family Members",
    "options": "Family Members"
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "label": "Student",
+   "options": "Student"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-05 10:16:11.699479",
+ "modified": "2025-02-24 11:52:21.798817",
  "modified_by": "Administrator",
  "module": "Programming Module",
  "name": "Client Side Scripting",
