@@ -1,12 +1,13 @@
 # Copyright (c) 2025, D-codE and contributors
 # For license information, please see license.txt
 
-import frappe
+# import frappe
 from frappe.model.document import Document
 from frappe import _ 
 
-# class ClientSideScripting(Document):
-# 	def get_student_data(self):
+class ClientSideScripting(Document):
+	def get_student_data(self):
+		pass
 # 		data = frappe.get_all('Student',
 # 			filters={'name': 'std-0016'},
 # 				fields=['enrollmentdate', 'studentname', 'id', 'bod']
