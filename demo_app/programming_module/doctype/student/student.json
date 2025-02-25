@@ -29,8 +29,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "ID",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "bold": 1,
@@ -119,7 +118,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-21 14:52:21.488391",
+ "modified": "2025-02-25 12:41:14.222173",
  "modified_by": "Administrator",
  "module": "Programming Module",
  "name": "Student",

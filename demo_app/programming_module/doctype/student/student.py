@@ -41,30 +41,40 @@ import frappe
 from frappe.model.document import Document
 
 class Student(Document):
-    def before_save(self):
-        total_marks = 0
-        total_subjects = len(self.subjects)
+    # def before_save(self):
+    #     total_marks = 0
+    #     total_subjects = len(self.subjects)
 
-        for subject in self.subjects:
-            # Corrected: Check 'marks' instead of 'subject_mark'
-            if subject.marks < 0:
-                frappe.throw(f"Marks for {subject.subjectname} cannot be negative.")
-            if subject.marks > 100:
-                frappe.throw(f"Marks for {subject.subjectname} cannot be more than 100.")
+    #     for subject in self.subjects:
+    #         # Corrected: Check 'marks' instead of 'subject_mark'
+    #         if subject.marks < 0:
+    #             frappe.throw(f"Marks for {subject.subjectname} cannot be negative.")
+    #         if subject.marks > 100:
+    #             frappe.throw(f"Marks for {subject.subjectname} cannot be more than 100.")
 
-            total_marks += subject.marks  # Corrected field
+    #         total_marks += subject.marks  # Corrected field
 
-        # Calculate percentage
-        self.percentage = (total_marks / (total_subjects * 100)) * 100 if total_subjects else 0
+    #     # Calculate percentage
+    #     self.percentage = (total_marks / (total_subjects * 100)) * 100 if total_subjects else 0
 
-        # Assign grade based on percentage
-        if self.percentage > 90:
-            self.grade = "A"
-        elif self.percentage > 80:
-            self.grade = "B"
-        elif self.percentage >= 70:
-            self.grade = "C"
-        elif self.percentage >= 50:
-            self.grade = "D"
-        else:
-            self.grade = "F"
+    #     # Assign grade based on percentage
+    #     if self.percentage > 90:
+    #         self.grade = "A"
+    #     elif self.percentage > 80:
+    #         self.grade = "B"
+    #     elif self.percentage >= 70:
+    #         self.grade = "C"
+    #     elif self.percentage >= 50:
+    #         self.grade = "D"
+    #     else:
+    #         self.grade = "F"
+
+
+
+    def validate(self):
+        self.new_document()
+
+    def new_document(self):
+        doc = frappe.new_doc('Student card')
+        doc.id = "std-0018"
+        doc.insert()

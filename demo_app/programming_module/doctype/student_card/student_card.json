@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-02-25 11:07:06.529806",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_ditails_section",
+  "id",
+  "studentname",
+  "columnbreak",
+  "section_break_lqj6",
+  "subjects",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_ditails_section",
+   "fieldtype": "Section Break",
+   "label": "Student Ditails"
+  },
+  {
+   "bold": 1,
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "studentname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "student name"
+  },
+  {
+   "fieldname": "columnbreak",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lqj6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "add to Subjects All",
+   "fieldname": "subjects",
+   "fieldtype": "Table",
+   "label": "Subjects",
+   "options": "Student card details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student card",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-02-25 11:50:54.027849",
+ "modified_by": "Administrator",
+ "module": "Programming Module",
+ "name": "Student card",
+ "naming_rule": "Autoincrement",
+ "nsm_parent_field": "parent_student",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

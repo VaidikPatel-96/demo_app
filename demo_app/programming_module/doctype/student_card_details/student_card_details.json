@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-25 11:10:20.646858",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subjectname",
+  "marks",
+  "percentage"
+ ],
+ "fields": [
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "subjectname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject Name"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "marks",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Marks"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Percentage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-02-25 14:17:04.582100",
+ "modified_by": "Administrator",
+ "module": "Programming Module",
+ "name": "Student card details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
